@@ -14,6 +14,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
 
 app.layout = layout
+server = app.server
 
 
 @app.callback([Output('table', 'data'), Output('store', 'data')], [Input('generate', 'n_clicks')])
